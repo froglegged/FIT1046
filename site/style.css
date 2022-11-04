@@ -1,0 +1,139 @@
+/* Header styling */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ff2244;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* Better to do case title with section styling? */
+
+.logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 5%;
+    padding-top: 10px;
+    margin-top: -10px;
+  }
+
+header {
+    padding-top: 50px;
+    text-align: center;
+    background: rgb(33,37,46);
+    background: linear-gradient(180deg, rgba(33,37,46,1) 0%, rgba(47,51,60,1) 100%);
+
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Inter', sans-serif;
+    background-color: #2f333c;
+}
+
+p, a {
+    color: white;
+}
+
+p1 {
+    font-family: 'Chiller', sans-serif;
+    font-size: 36px;
+    color: red;
+}
+
+a1 {
+    color: red;
+    font-family: 'Chiller', sans-serif;
+    font-size: 36px;
+}
+
+section {
+    margin: auto;
+    width: 1000px;
+}
+
+hr {
+    border: 1px solid gray;
+    width: 1000px;
+}
+
+/* Case name styling */
+#case_name {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Image Handling */
+
+img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px red solid;
+}
+
+/* Footer styling*/
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background: rgb(33,37,46);
+    background: linear-gradient(0deg, rgba(33,37,46,1) 0%, rgba(47,51,60,1) 100%);
+}
+
+/* Text distortion effects */
+a[id*="distortion_emotions"]::after {
+    content: "FEAR";
+    animation-name: emotions;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes emotions {
+    0% {content: "█NVY";}
+    10% {content: "EN!Y";}
+    20% {content: "CALM";}
+    30% {content: "LOV!";}
+    40% {content: "LO█E";}
+    50% {content: "FEAR";}
+    60% {content: "FEA█";}
+    70% {content: "FE#R";}
+    80% {content: "HOPE";}
+    90% {content: "L█ST";}
+    100% {content: "████";}
+}
+
+a1[id*="distortion_death"]::after {
+    content: "FEAR";
+    animation-name: death;
+    animation-duration: 1.1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes death {
+    0% {content: "DIE";}
+    10% {content: "IDE";}
+    20% {content: "D#E";}
+    30% {content: "DIE";}
+    40% {content: "D!E";}
+    50% {content: "DIE";}
+    60% {content: "#EI";}
+    70% {content: "DIE";}
+    80% {content: "LIE";}
+    90% {content: "IDD";}
+    100% {content: "DIE";}
+}
