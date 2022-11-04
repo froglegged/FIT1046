@@ -17,7 +17,7 @@ h2 {
 /* Better to do case title with section styling? */
 
 .logo {
-    background-image: url(../images/logo.png);
+    background-image: url(images/logo.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 5%;
